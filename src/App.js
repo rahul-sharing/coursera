@@ -11,9 +11,6 @@ function App() {
     <Nav/>
     <Main/>
     <Footer/>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
       <p>Home Page</p>
     </div>
   );
