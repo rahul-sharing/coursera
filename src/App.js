@@ -1,18 +1,19 @@
 import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Main from './components/Main';
-import Nav from './components/Nav';
+import {Routes, Route} from 'react-router-dom'
+import Home from './page/Home';
+import BookingPage from './page/BookingPage';
 
 function App() {
   return (
-    <div className="App">
-    <Header/>
-    <Nav/>
-    <Main/>
-    <Footer/>
-      <p>Home Page</p>
-    </div>
+    <>
+
+    <Routes>
+      <Route path='/' element={ <Home/>} />
+      <Route path='/booking' element={ <BookingPage/>} />
+      <Route path='*' element={<h1>Sorry! There is no such page</h1>} />
+    </Routes>
+
+    </>
   );
 }
 

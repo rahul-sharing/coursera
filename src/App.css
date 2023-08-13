@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+
+*, html, body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* nav styling start */
+nav{
   display: flex;
-  flex-direction: column;
+  justify-content:space-between;
   align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+nav .logo {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+nav .logo img{
+  margin-right: 10px;
+}
+nav .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .navigation ul{
+display: flex; 
+justify-content:space-between;
+align-items:center
+}
+nav .navigation li{
+ list-style:  none;
+ margin-left: 1.5rem;
+}
+nav .navigation li a{
+ text-decoration: none;
+ color:#495e57;
+ font-weight: 600;
+ font-size: 18px;
+}
+/* nav styling end */
+
+
+/* main area styling start */
+main{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  /* width: 90%;
+  margin: 0 auto; */
+  height: 80vh;
+  padding: 0 5%;
+  background-color: #495e57;
+  position: relative;
+}
+main .textArea{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  max-width: 30%;
+}
+main .textArea h1{
+ color:#f4ce14;
+ font-size: 64px;
+}
+main .textArea h4{
+ color:#efefee;
+ font-size: 40px;
+}
+main .textArea p{
+ color:#fff;
+ margin: .8rem 0;
+ font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn{     /* general for all btn */
+ color:#495e57;
+background-color:#f4ce14;
+border-radius: .8rem;
+padding: .8rem;
+ margin: .5rem 0;
+ font-size: 18px;
+ font-weight: bold;
+ outline: none;
+ border: none;
+ cursor: pointer;
+}
+main .heroImg{
+ position: absolute;
+ width: 35vw;
+ height: 70vh;
+ right: 5%;
+ bottom: -40px;
+ border-radius: 10px;
+}
+/* main area styling end */
+
+
+/* dishes area start */
+.dishesHeadingArea{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding: 5rem 0 1rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dishesHeadingArea h4{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
+.dishCardsArea{
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  grid-gap:3rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+.dishCardsArea .dishCard{
+  background-color: #edefee;
+
+}
+
+
+.dishCard img{
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.dishCard div, .dishCard p, .dishCard a{
+display: flex;
+justify-content: space-between;
+width: 90%;
+margin: 1.5rem auto;
+
+}
+.dishCard div h5{
+  font-size: 18px;
+}
+.dishCard div span{
+  font-size: 18px;
+  color: #ee9972;
+}
+
+.dishCard p{
+  font-size: 18px;
+  font-weight:normal;
+}
+.dishCard a:hover{
+color:#fbdabb;
+}
+/* dishes area end */
