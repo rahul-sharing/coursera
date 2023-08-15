@@ -44,6 +44,13 @@ nav .navigation li a{
  font-weight: 600;
  font-size: 18px;
 }
+
+@media only screen and (max-width: 650px) {
+  nav {
+   flex-direction: column;
+   gap: 2rem;
+  }
+}
 /* nav styling end */
 
 
@@ -99,6 +106,22 @@ main .heroImg{
  right: 5%;
  bottom: -40px;
  border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 950px) {
+  main .heroImg{
+   display: none;
+   }
+   main{
+  justify-content:center;
+
+}
+main .textArea{
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
 }
 /* main area styling end */
 
