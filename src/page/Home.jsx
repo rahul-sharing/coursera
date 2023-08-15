@@ -13,7 +13,6 @@ const Home = () => {
             <Main />
             <SpecialDishes />
             <Footer />
-            <p>Home Page</p>
         </>
     )
 }
